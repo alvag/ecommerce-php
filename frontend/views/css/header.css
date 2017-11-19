@@ -1,0 +1,162 @@
+/* Top */
+#top ul {
+	padding-top : 8px;
+}
+
+#top ul li {
+	display     : inline;
+	line-height : 30px;
+	margin      : 0 5px;
+	color       : #FFFFFF;
+}
+
+.social ul li a i {
+	font-size : 18px;
+	margin    : 0 1px;
+}
+
+.registro ul {
+	text-align : right;
+	font-size  : 12px;
+}
+
+/* Header */
+
+header #logo img {
+	padding : 20px 60px 20px 0;
+}
+
+header #btnCategorias {
+	margin : 20px 0;
+}
+
+header #btnCategorias p {
+	line-height   : 40px;
+	margin-bottom : 0;
+}
+
+header #btnCategorias p span {
+	cursor : pointer;
+}
+
+header #buscador {
+	margin : 20px 0;
+}
+
+header #buscador input {
+	padding       : 19px;
+	border-radius : 0;
+}
+
+header #buscador button {
+	padding       : 9px;
+	border        : 1px solid silver;
+	border-radius : 0;
+}
+
+header #shoppingCart {
+	margin : 20px 0;
+}
+
+header #shoppingCart button {
+	padding       : 9px 15px;
+	border        : 1px solid silver;
+	border-radius : 0;
+}
+
+header #shoppingCart p {
+	padding   : 2px 2px 2px 60px;
+	border    : 1px solid #AAAAAA;
+	font-size : 12px;
+}
+
+header #categorias {
+	display    : none;
+	margin-top : -10px;
+	position   : relative;
+}
+
+header #categorias h4 {
+	margin-top    : 20px;
+	margin-bottom : -10px;
+}
+
+header #categorias hr {
+	border : 1px solid rgba(255, 255, 255, .3);
+}
+
+/*
+	Escritorio grande - LG - 1366
+*/
+
+@media (min-width : 1200px) {
+	header #logo img {
+		padding : 20px 60px 20px 0;
+	}
+
+	header #shoppingCart {
+		padding-left : 100px;
+	}
+}
+
+/*
+	Escritorio mediano o tablet horizontal - MD - 1024
+*/
+
+@media (max-width : 1199px) and (min-width : 992px) {
+	header #logo img {
+		padding : 25px 60px 25px 0;
+	}
+
+	header #shoppingCart {
+		padding-left : 70px;
+	}
+}
+
+/*
+	Escritorio pequeño o tablet vertical - SM 768
+*/
+
+@media (max-width : 991px) and (min-width : 768px) {
+	header #logo img {
+		padding : 30px 0;
+	}
+
+	header #shoppingCart {
+		padding-left : 55px;
+	}
+
+	header #shoppingCart p {
+		display : none;
+	}
+}
+
+/*
+	Móvil - XS - 320
+*/
+
+@media (max-width : 767px) {
+	#top ul {
+		text-align : center;
+	}
+
+	#top .regisro {
+		border-top : 1px solid #222222;
+	}
+
+	header #logo img {
+		padding : 30px 30px 10px;
+	}
+
+	header #categorias {
+		margin-bottom : 10px;
+	}
+
+	header #buscador {
+		margin-bottom : 10px;
+	}
+
+	header #shoppingCart {
+		margin : 0;
+	}
+}

@@ -1,0 +1,149 @@
+/* Global */
+* {
+	margin          : 0;
+	padding         : 0;
+	list-style      : none;
+	text-decoration : none;
+	font-family     : "Ubuntu", sans-serif;
+}
+
+ul, ol {
+	padding : 0;
+}
+
+a:visited, a:link, a:focus, a:hover, a:active {
+	list-style      : none;
+	text-decoration : none;
+}
+
+.barraSuperior {
+	background : #000000;
+}
+
+.barraSuperior a {
+	color : #FFFFFF;
+}
+
+.backColor, .backColor a {
+	background : #47BAC1;
+	color      : #FFFFFF;
+}
+
+/* Redes Sociales */
+
+.redSocial {
+	width       : 30px;
+	height      : 30px;
+	text-align  : center;
+	line-height : 30px;
+}
+
+/* Facebook */
+.facebookBlanco {
+	color : #FFFFFF;
+}
+
+.facebookNegro {
+	color : #000000;
+}
+
+.facebookColor {
+	color      : #FFFFFF;
+	background : #46639F;
+}
+
+/* YouTube */
+.youtubeBlanco {
+	color : #FFFFFF;
+}
+
+.youtubeNegro {
+	color : #000000;
+}
+
+.youtubeColor {
+	color      : #FFFFFF;
+	background : #D6513E;
+}
+
+/* Twitter */
+.twitterBlanco {
+	color : #FFFFFF;
+}
+
+.twitterNegro {
+	color : #000000;
+}
+
+.twitterColor {
+	color      : #FFFFFF;
+	background : #0AB2E6;
+}
+
+/* Google */
+.googleBlanco {
+	color : #FFFFFF;
+}
+
+.googleNegro {
+	color : #000000;
+}
+
+.googleColor {
+	color      : #FFFFFF;
+	background : #D71617;
+}
+
+/* Instagram */
+.instagramBlanco {
+	color : #FFFFFF;
+}
+
+.instagramNegro {
+	color : #000000;
+}
+
+.instagramColor {
+	color      : #FFFFFF;
+	background : linear-gradient(45deg, #FCA925, #EE1D5F, #6350A2);
+}
+
+/*
+	Escritorio grande - LG - 1366
+*/
+
+@media (min-width: 1200px){
+	.col-lg-0 {
+		display: none;
+	}
+}
+
+/*
+	Escritorio mediano o tablet horizontal - MD - 1024
+*/
+
+@media (max-width: 1199px) and (min-width: 992px){
+	.col-md-0 {
+		display: none;
+	}
+}
+
+/*
+	Escritorio pequeño o tablet vertical - SM - 768
+*/
+
+@media (max-width: 991px) and (min-width: 768px){
+	.col-sm-0 {
+		display: none;
+	}
+}
+
+/*
+	Móvil - XS - 320
+*/
+
+@media (max-width: 767px) {
+	.col-xs-0 {
+		display: none;
+	}
+}
