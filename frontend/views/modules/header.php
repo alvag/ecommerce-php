@@ -7,16 +7,16 @@
 			<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 social">
 				<ul>
 					<?php
-						$social = TemplateController::ctrlEstiloTemplate();
-						$jsonRedesSociales = json_decode($social["redesSociales"], true);
+					$social = TemplateController ::ctrlEstiloTemplate();
+					$jsonRedesSociales = json_decode($social["redesSociales"], true);
 
-						foreach($jsonRedesSociales as $key => $value) {
-							echo '<li>
-									<a href="'.$value["url"].'" target="_blank">
-										<i class="fa '.$value["red"].' redSocial '.$value["estilo"].'" aria-hidden="true"></i>
+					foreach($jsonRedesSociales as $key => $value) {
+						echo '<li>
+									<a href="' . $value["url"] . '" target="_blank">
+										<i class="fa ' . $value["red"] . ' redSocial ' . $value["estilo"] . '" aria-hidden="true"></i>
 									</a>
 								</li>';
-						}
+					}
 					?>
 				</ul>
 			</div>
@@ -86,50 +86,28 @@
 
 		<!-- Categorías -->
 		<div class="col-xs-12 backColor" id="categorias">
-			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-				<h4><a href="#" class="pixelCategorias">Lorem Ipsum</a></h4>
-				<hr>
-				<ul>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-				</ul>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-				<h4><a href="#" class="pixelCategorias">Lorem Ipsum</a></h4>
-				<hr>
-				<ul>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-				</ul>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-				<h4><a href="#" class="pixelCategorias">Lorem Ipsum</a></h4>
-				<hr>
-				<ul>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-				</ul>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-				<h4><a href="#" class="pixelCategorias">Lorem Ipsum</a></h4>
-				<hr>
-				<ul>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-					<li><a href="#" class="pixelSubCategorias">Lorem Ipsum</a></li>
-				</ul>
-			</div>
+
+			<?php
+
+				$categorias = ProductosController::ctrlMostrarCategorias();
+
+				foreach($categorias as $key => $value) {
+
+					echo '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+							<h4><a href="'.$value["ruta"].'" class="pixelCategorias">'.$value["categoria"].'</a></h4>
+							<hr>
+							<ul>';
+
+					$subcategorias = ProductosController::ctrlMostrarSubcategorias($value["id"]);
+
+					foreach($subcategorias as $keySub => $valueSub){
+						echo '<li><a href="'.$value["ruta"].'/'.$valueSub["ruta"].'" class="pixelSubCategorias">'.$valueSub["subcategoria"].'</a></li>';
+					}
+					echo '</ul>
+						</div>';
+				}
+
+			?>
 		</div>
 
 	</div>
