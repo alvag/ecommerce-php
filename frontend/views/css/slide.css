@@ -1,0 +1,167 @@
+#slide {
+	position : relative;
+	margin   : auto;
+	width    : 100%;
+	overflow : hidden;
+	padding  : 0;
+}
+
+#slide ul {
+	position : relative;
+	left     : 0;
+	margin   : auto;
+	height   : auto;
+	width    : 400%;
+	clear    : both;
+	display  : table;
+}
+
+#slide ul li {
+	position : relative;
+	float    : left;
+	width    : 25%;
+}
+
+#slide ul li img {
+	width : 100%;
+}
+
+#slide .slideOpcion1 img {
+	position : absolute;
+	opacity  : 1;
+	/*top      : 15%;
+	right    : 10%;
+	width    : 45%;*/
+}
+
+#slide .slideOpcion1 .textosSlide {
+	position : absolute;
+	/*width    : 40%;
+	top      : 20%;
+	left     : 10%;*/
+}
+
+#slide .slideOpcion2 img {
+	position : absolute;
+	opacity  : 1;
+	/*top      : 5%;
+	left     : 15%;
+	width    : 25%;*/
+}
+
+#slide .slideOpcion2 .textosSlide {
+	position   : absolute;
+	text-align : right;
+	/*width      : 40%;
+	top        : 15%;
+	right      : 15%;*/
+}
+
+#slide .slideOpciones h1 {
+	text-transform : uppercase;
+	font-size      : 50px;
+	font-family    : 'Ubuntu Condensed', sans-serif;
+	opacity        : 1;
+	top            : -10%;
+	color          : #333333;
+}
+
+#slide .slideOpciones h2 {
+	text-transform : uppercase;
+	font-size      : 35px;
+	font-family    : 'Ubuntu Condensed', sans-serif;
+	opacity        : 1;
+	top            : -10%;
+	color          : #777777;
+}
+
+#slide .slideOpciones h3 {
+	text-transform : uppercase;
+	font-size      : 30px;
+	font-family    : 'Ubuntu Condensed', sans-serif;
+	opacity        : 1;
+	top            : -10%;
+	color          : #888888;
+}
+
+#slide .slideOpciones button {
+	border     : 0;
+	margin-top : 10px;
+	padding    : 10px;
+	opacity    : 1;
+	top        : -10%;
+}
+
+#slide .slideOpciones button:hover {
+	background : #000000;
+	color      : #FFFFFF;
+	border     : 0;
+}
+
+#slide .slideOpciones button span {
+	margin-left : 10px;
+}
+
+/*Navegacion del slide*/
+
+#slide .flechas {
+	position  : absolute;
+	font-size : 2em;
+	color     : #FFFFFF;
+	cursor    : pointer;
+	z-index   : 2;
+}
+
+#slide #retroceder {
+	background : #666666;
+	padding    : 40px 15px 40px 10px;
+	top        : 37%;
+	left       : 0;
+	font-size  : 22px;
+	opacity    : 0;
+}
+
+#slide #avanzar {
+	background : #666666;
+	padding    : 40px 10px 40px 15px;
+	top        : 37%;
+	right      : 0;
+	font-size  : 22px;
+	opacity    : 0;
+}
+
+#slide #retroceder:hover, #slide #avanzar:hover {
+	background : #777777;
+}
+
+#slide #retroceder:active, #slide #avanzar:active {
+	background : #444444;
+}
+
+/*Paginacion Slide*/
+
+#slide #paginacion-slide {
+	position    : absolute;
+	width       : 100%;
+	margin      : auto;
+	text-align  : center;
+	line-height : 40px;
+	font-size   : 12px;
+	bottom      : 0;
+	left        : 0;
+	z-index     : 1;
+	background  : rgba(0, 0, 0, 0.05);
+}
+
+#slide #paginacion-slide li {
+	display     : inline-block;
+	margin      : 0 5px;
+	cursor      : pointer;
+	opacity     : .5;
+	color       : #FFFFFF;
+	text-shadow : 0 0 5px #333333;
+}
+
+#slide #paginacion-slide li:first-child {
+	opacity : 1;
+}

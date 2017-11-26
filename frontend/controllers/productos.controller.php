@@ -7,9 +7,9 @@ class ProductosController {
 		return ModeloProductos::modelMostrarCategorias($table, $item, $valor);
 	}
 
-	static public function ctrlMostrarSubcategorias($id) {
+	static public function ctrlMostrarSubCategorias($item, $valor) {
 		$table = "subcategorias";
-		return ModeloProductos::modelMostrarSubcategorias($table, $id);
+		return ModeloProductos::modelMostrarSubCategorias($table, $item, $valor);
 	}
 
 }

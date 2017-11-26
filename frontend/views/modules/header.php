@@ -40,7 +40,7 @@
 
 			<!-- Logo -->
 			<div class="col-lg-3 col-md-3 col-sm-2 col-xs-12" id="logo">
-				<a href="#">
+				<a href="./">
 					<img class="img-responsive" src="../backend/<?php echo $social['logo'] ?>" alt="">
 				</a>
 			</div>
@@ -98,10 +98,12 @@
 							<hr>
 							<ul>';
 
-					$subcategorias = ProductosController::ctrlMostrarSubcategorias($value["id"]);
+					$item = "id_categoria";
+					$valor = $value["id"];
+					$subcategorias = ProductosController::ctrlMostrarSubCategorias($item, $valor);
 
 					foreach($subcategorias as $keySub => $valueSub){
-						echo '<li><a href="'.$value["ruta"].'/'.$valueSub["ruta"].'" class="pixelSubCategorias">'.$valueSub["subcategoria"].'</a></li>';
+						echo '<li><a href="'.$valueSub["ruta"].'" class="pixelSubCategorias">'.$valueSub["subcategoria"].'</a></li>';
 					}
 					echo '</ul>
 						</div>';
