@@ -7,6 +7,7 @@
 			<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 social">
 				<ul>
 					<?php
+					$urlBackend = Ruta ::getRutaServidor();
 					$social = TemplateController ::ctrlEstiloTemplate();
 					$jsonRedesSociales = json_decode($social["redesSociales"], true);
 
@@ -41,7 +42,7 @@
 			<!-- Logo -->
 			<div class="col-lg-3 col-md-3 col-sm-2 col-xs-12" id="logo">
 				<a href="./">
-					<img class="img-responsive" src="../backend/<?php echo $social['logo'] ?>" alt="">
+					<img class="img-responsive" src="<?php echo $urlBackend.$social['logo'] ?>" alt="">
 				</a>
 			</div>
 

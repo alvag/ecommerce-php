@@ -59,35 +59,31 @@
 
 #slide .slideOpciones h1 {
 	text-transform : uppercase;
-	font-size      : 50px;
 	font-family    : 'Ubuntu Condensed', sans-serif;
 	opacity        : 1;
 	top            : -10%;
-	color          : #333333;
+	/*color          : #333333;*/
 }
 
 #slide .slideOpciones h2 {
 	text-transform : uppercase;
-	font-size      : 35px;
 	font-family    : 'Ubuntu Condensed', sans-serif;
 	opacity        : 1;
 	top            : -10%;
-	color          : #777777;
+	/*color          : #777777;*/
 }
 
 #slide .slideOpciones h3 {
 	text-transform : uppercase;
-	font-size      : 30px;
 	font-family    : 'Ubuntu Condensed', sans-serif;
 	opacity        : 1;
 	top            : -10%;
-	color          : #888888;
+	/*color          : #888888;*/
 }
 
 #slide .slideOpciones button {
 	border     : 0;
 	margin-top : 10px;
-	padding    : 10px;
 	opacity    : 1;
 	top        : -10%;
 }
@@ -114,19 +110,13 @@
 
 #slide #retroceder {
 	background : #666666;
-	padding    : 40px 15px 40px 10px;
-	top        : 37%;
 	left       : 0;
-	font-size  : 22px;
 	opacity    : 0;
 }
 
 #slide #avanzar {
 	background : #666666;
-	padding    : 40px 10px 40px 15px;
-	top        : 37%;
 	right      : 0;
-	font-size  : 22px;
 	opacity    : 0;
 }
 
@@ -164,4 +154,154 @@
 
 #slide #paginacion-slide li:first-child {
 	opacity : 1;
+}
+
+#btnSlide {
+	width     : 150px;
+	border    : 0;
+	font-size : 25px;
+	padding   : 2px;
+}
+
+/*
+	Escritorio grande - LG - 1366
+*/
+
+@media (min-width : 1200px) {
+
+	#slide #retroceder {
+		font-size : 22px;
+		padding   : 40px 15px 40px 10px;
+		top       : 37%;
+	}
+
+	#slide #avanzar {
+		font-size : 22px;
+		padding   : 40px 10px 40px 15px;
+		top       : 37%;
+	}
+
+	#slide .slideOpciones h1 {
+		font-size  : 50px;
+		margin-top : 5px;
+	}
+
+	#slide .slideOpciones h2 {
+		font-size : 35px;
+	}
+
+	#slide .slideOpciones h3 {
+		font-size : 30px;
+	}
+
+	#slide .slideOpciones button {
+		padding : 10px;
+	}
+
+}
+
+/*
+	Escritorio mediano o tablet horizontal - MD - 1024
+*/
+
+@media (max-width : 1199px) and (min-width : 992px) {
+
+	#slide #retroceder {
+		font-size : 18px;
+		padding   : 40px 15px 40px 10px;
+		top       : 35%;
+	}
+
+	#slide #avanzar {
+		font-size : 18px;
+		padding   : 40px 10px 40px 15px;
+		top       : 35%;
+	}
+
+	#slide .slideOpciones h1 {
+		font-size  : 35px;
+		margin-top : 5px;
+	}
+
+	#slide .slideOpciones h2 {
+		font-size : 30px;
+	}
+
+	#slide .slideOpciones h3 {
+		font-size : 20px;
+	}
+
+	#slide .slideOpciones button {
+		padding : 10px;
+	}
+
+}
+
+/*
+	Escritorio pequeño o tablet vertical - SM - 768
+*/
+
+@media (max-width : 991px) and (min-width : 768px) {
+
+	#slide #retroceder {
+		font-size : 14px;
+		padding   : 30px 8px 30px 5px;
+		top       : 35%;
+	}
+
+	#slide #avanzar {
+		font-size : 14px;
+		padding   : 30px 5px 30px 8px;
+		top       : 35%;
+	}
+
+	#slide .slideOpciones h1 {
+		font-size  : 25px;
+		margin-top : 5px;
+	}
+
+	#slide .slideOpciones h2 {
+		font-size : 20px;
+	}
+
+	#slide .slideOpciones h3 {
+		font-size : 15px;
+	}
+
+	#slide .slideOpciones button {
+		padding : 5px;
+	}
+
+}
+
+/*
+	Móvil - XS - 320
+*/
+
+@media (max-width : 767px) {
+
+	#slide #retroceder, #slide #avanzar {
+		display : none;
+	}
+
+	#slide .slideOpciones h1 {
+		font-size     : 15px;
+		margin-bottom : -20px;
+		margin-top    : 5px;
+	}
+
+	#slide .slideOpciones h2 {
+		display : none;
+	}
+
+	#slide .slideOpciones h3 {
+		font-size     : 10px;
+		margin-bottom : -5px;
+	}
+
+	#slide .slideOpciones button {
+		font-size : 10px;
+		padding   : 5px;
+	}
+
 }

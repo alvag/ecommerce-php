@@ -12,10 +12,12 @@
 
 	<title>Tienda Virtual</title>
 	<?php
-	$icono = TemplateController ::ctrlEstiloTemplate();
-	echo '<link rel="icon" href="../backend/' . $icono['icono'] . '">';
-
 	$url = Ruta ::getRuta();
+	$urlBackend = Ruta ::getRutaServidor();
+	$icono = TemplateController ::ctrlEstiloTemplate();
+	echo '<link rel="icon" href="'.$urlBackend.$icono['icono'] . '">';
+
+
 
 	?>
 	<link rel="stylesheet" href="<?php echo $url ?>views/css/plugins/bootstrap.min.css">

@@ -12,6 +12,11 @@ var flechaAvanzar = slide.find("#avanzar");
 var item = 0;
 var interrumpirIntervalo = false;
 var detenerIntervalo = false;
+var toogle = false;
+var cantItems = slide.find("ul li").length;
+
+slide.find("ul li").css({"width": 100 / cantItems + "%"});
+slide.find("ul").css({"width": cantItems * 100 + "%"});
 
 setAnimations(item);
 
@@ -26,7 +31,7 @@ flechaAvanzar.click(function () {
 });
 
 function avanzar() {
-    if (item === 3) {
+    if (item === cantItems -1) {
         item = 0;
     } else {
         item++;
@@ -36,7 +41,7 @@ function avanzar() {
 
 flechaRetroceder.click(function () {
     if (item === 0) {
-        item = 3;
+        item = cantItems -1;
     } else {
         item--;
     }
@@ -93,4 +98,17 @@ slide.mouseout(function () {
     flechaRetroceder.css({"opacity": 0});
     flechaAvanzar.css({"opacity": 0});
     detenerIntervalo = false;
+});
+
+// ocultar slide
+$("#btnSlide").click(function () {
+
+    if (!toogle) {
+        slide.slideUp("fast");
+        $("#btnSlide").html('<i class="fa fa-angle-down"></i>');
+    } else {
+        $("#btnSlide").html('<i class="fa fa-angle-up"></i>');
+        slide.slideDown("fast");
+    }
+    toogle = !toogle;
 });

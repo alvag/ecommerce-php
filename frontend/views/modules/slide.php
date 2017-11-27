@@ -1,90 +1,50 @@
 <div class="container-fluid" id="slide">
-	
+
 	<div class="row">
-		
+
 		<ul>
 
-			<!--slide 1-->
-			<li>
-				<img src="../backend/views/img/slide/default/back_default.jpg" alt="">
-				<div class="slideOpciones slideOpcion1">
-					<img style="top: 15%; right: 10%; width: 45%" src="../backend/views/img/slide/slide1/calzado.png" alt="" class="imgProducto">
-					<div style="top: 20%; left: 10%; width: 40%" class="textosSlide">
-						<h1 style="color: #333">Lorem ipsum</h1>
-						<h2 style="color: #777">Lorem ipsum dolor sit amet</h2>
-						<h3 style="color: #888">Lorem ipsum dolor sit amet</h3>
-						<a href="#">
-							<button class="btn btn-default backColor">
-								Ver Producto <span class="fa fa-chevron-right"></span>
-							</button>
-						</a>
-					</div>
-				</div>
-			</li>
+			<?php
+			$urlBackend = Ruta ::getRutaServidor();
+			$slide = SlideController::mostrarSlide();
+			foreach($slide as $key => $value) {
 
-			<!--slide 2-->
-			<li>
-				<img src="../backend/views/img/slide/default/back_default.jpg" alt="">
-				<div class="slideOpciones slideOpcion2">
-					<img style="top: 5%; left: 15%; width: 25%" src="../backend/views/img/slide/slide2/ropa-deportiva.png" alt="" class="imgProducto">
-					<div style="top: 20%; right: 10%; width: 40%" class="textosSlide">
-						<h1 style="color: #333">Lorem ipsum</h1>
-						<h2 style="color: #777">Lorem ipsum dolor sit amet</h2>
-						<h3 style="color: #888">Lorem ipsum dolor sit amet</h3>
-						<a href="#">
-							<button class="btn btn-default backColor">
-								Ver Producto <span class="fa fa-chevron-right"></span>
-							</button>
-						</a>
-					</div>
-				</div>
-			</li>
+				$estiloImgProducto = json_decode($value["estiloImgProducto"], true);
+				$estiloTextoSlide = json_decode($value["estiloTextoSlide"], true);
+				$titulo1 = json_decode($value["titulo1"], true);
+				$titulo2 = json_decode($value["titulo2"], true);
+				$titulo3 = json_decode($value["titulo3"], true);
 
-			<!--slide 3-->
-			<li>
-				<img src="../backend/views/img/slide/slide3/fondo2.jpg" alt="">
-				<div class="slideOpciones slideOpcion2">
-					<img style="top: 5%; left: 15%; width: 25%" src="../backend/views/img/slide/slide3/iphone.png" alt="" class="imgProducto">
-					<div style="top: 20%; right: 10%; width: 40%" class="textosSlide">
-						<h1 style="color: #eee">Lorem ipsum</h1>
-						<h2 style="color: #ccc">Lorem ipsum dolor sit amet</h2>
-						<h3 style="color: #aaa">Lorem ipsum dolor sit amet</h3>
-						<a href="#">
-							<button class="btn btn-default backColor">
-								Ver Producto <span class="fa fa-chevron-right"></span>
-							</button>
-						</a>
+				echo '<li>
+					<img src="'.$urlBackend.$value["imgFondo"].'" alt="">
+					<div class="slideOpciones '.$value["tipoSlide"].'">
+						<img style="top: '.$estiloImgProducto["top"].'; right: '.$estiloImgProducto["right"].'; width: '.$estiloImgProducto["width"].'; left: '.$estiloImgProducto["left"].'" src="'.$urlBackend.$value["imgProducto"].'"
+						     alt="" class="imgProducto">
+						<div style="top: '.$estiloTextoSlide["top"].'; left: '.$estiloTextoSlide["left"].'; width: '.$estiloTextoSlide["width"].'; right: '.$estiloTextoSlide["right"].'" class="textosSlide">
+							<h1 style="color: '.$titulo1["color"].'">'.$titulo1["texto"].'</h1>
+							<h2 style="color: '.$titulo2["color"].'">'.$titulo2["texto"].'</h2>
+							<h3 style="color: '.$titulo3["color"].'">'.$titulo3["texto"].'</h3>
+							<a href="'.$value["url"].'">
+								'.$value["boton"].'
+							</a>
+						</div>
 					</div>
-				</div>
-			</li>
+				</li>';
+			}
 
-			<!--slide 4-->
-			<li>
-				<img src="../backend/views/img/slide/slide4/fondo3.jpg" alt="">
-				<div class="slideOpciones slideOpcion1">
-					<img style="top: 5%; right: 15%; width: 25%" src="" alt="" class="imgProducto">
-					<div style="top: 20%; left: 10%; width: 40%" class="textosSlide">
-						<h1 style="color: #333">Lorem ipsum</h1>
-						<h2 style="color: #777">Lorem ipsum dolor sit amet</h2>
-						<h3 style="color: #888">Lorem ipsum dolor sit amet</h3>
-						<a href="#">
-							<button class="btn btn-default backColor">
-								Ver Producto <span class="fa fa-chevron-right"></span>
-							</button>
-						</a>
-					</div>
-				</div>
-			</li>
+			?>
 
 		</ul>
 
 		<!--paginacion slide-->
 
 		<ol id="paginacion-slide">
-			<li item="1"><span class="fa fa-circle"></span></li>
-			<li item="2"><span class="fa fa-circle"></span></li>
-			<li item="3"><span class="fa fa-circle"></span></li>
-			<li item="4"><span class="fa fa-circle"></span></li>
+			<?php
+
+				for($i = 1; $i <= count($slide); $i++) {
+					echo'<li item="'.$i.'"><span class="fa fa-circle"></span></li>';
+				}
+			?>
 		</ol>
 
 		<!--navegacion del slide-->
@@ -92,5 +52,11 @@
 		<div class="flechas" id="avanzar"><span class="fa fa-chevron-right"></span></div>
 
 	</div>
-	
+
 </div>
+
+<center>
+	<button id="btnSlide" class="backColor">
+		<i class="fa fa-angle-up"></i>
+	</button>
+</center>
