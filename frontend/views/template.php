@@ -17,15 +17,17 @@
 	$icono = TemplateController ::ctrlEstiloTemplate();
 	echo '<link rel="icon" href="'.$urlBackend.$icono['icono'] . '">';
 
-
-
 	?>
 	<link rel="stylesheet" href="<?php echo $url ?>views/css/plugins/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo $url ?>views/css/plugins/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+
+	<!-- estilos personalizados -->
+
 	<link rel="stylesheet" href="<?php echo $url ?>views/css/main.css">
 	<link rel="stylesheet" href="<?php echo $url ?>views/css/header.css">
 	<link rel="stylesheet" href="<?php echo $url ?>views/css/slide.css">
+	<link rel="stylesheet" href="<?php echo $url ?>views/css/productos.css">
 
 
 </head>
@@ -67,12 +69,14 @@
 
 	} else {
 		include "modules/slide.php";
+		include "modules/destacados.php";
 	}
 	?>
 
 	<script src="<?php echo $url ?>views/js/plugins/jquery.min.js"></script>
 	<script src="<?php echo $url ?>views/js/plugins/bootstrap.min.js"></script>
 	<script src="<?php echo $url ?>views/js/plugins/jquery.easing.js"></script>
+	<!-- scripts personalizados-->
 	<script src="<?php echo $url ?>views/js/header.js"></script>
 	<script src="<?php echo $url ?>views/js/template.js"></script>
 	<script src="<?php echo $url ?>views/js/slide.js"></script>
