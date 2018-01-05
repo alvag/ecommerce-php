@@ -1,3 +1,7 @@
+/*herramienta tooltip*/
+$("[data-toggle='tooltip']").tooltip();
+
+
 $.ajax({
     url: "ajax/template.ajax.php",
     success: function (respuesta) {
