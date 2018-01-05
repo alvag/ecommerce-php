@@ -66,7 +66,7 @@
 		</div>
 
 		<!--productos en cuadricula-->
-		<ul style="display: none;" class="grid0">
+		<ul class="grid0">
 
 			<!--producto 1-->
 			<li class="col-md-3 col-sm-6 col-xs-12">
@@ -248,7 +248,7 @@
 		</ul>
 
 		<!--productos en lista-->
-		<ul class="list0">
+		<ul style="display: none;" class="list0">
 
 			<!--producto 1-->
 			<li class="col-xs-12">
@@ -481,7 +481,7 @@
 		</div>
 
 		<!--productos en cuadricula-->
-		<ul style="display: none;" class="grid1">
+		<ul class="grid1">
 
 			<!--producto 1-->
 			<li class="col-md-3 col-sm-6 col-xs-12">
@@ -675,7 +675,7 @@
 		</ul>
 
 		<!--productos en lista-->
-		<ul class="list1">
+		<ul style="display: none;" class="list1">
 
 			<!--producto 1-->
 			<li class="col-xs-12">
@@ -785,7 +785,7 @@
 		</div>
 
 		<!--productos en cuadricula-->
-		<ul style="display: none" class="grid2">
+		<ul class="grid2">
 
 			<!--producto 1-->
 			<li class="col-md-3 col-sm-6 col-xs-12">
@@ -1012,7 +1012,7 @@
 		</ul>
 
 		<!--productos en lista-->
-		<ul class="list2">
+		<ul style="display: none" class="list2">
 
 			<!--producto 1-->
 			<li class="col-xs-12">
