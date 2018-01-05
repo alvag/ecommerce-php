@@ -26,7 +26,7 @@
 						<span class="col-xs-0 pull-right"> GRID</span>
 					</button>
 
-					<button type="button" class="btn btn-default bntList" id="btnList0">
+					<button type="button" class="btn btn-default btnList" id="btnList0">
 						<i class="fa fa-list" aria-hidden="true"></i>
 						<span class="col-xs-0 pull-right"> LIST</span>
 					</button>
@@ -441,7 +441,7 @@
 						<span class="col-xs-0 pull-right"> GRID</span>
 					</button>
 
-					<button type="button" class="btn btn-default bntList" id="btnList1">
+					<button type="button" class="btn btn-default btnList" id="btnList1">
 						<i class="fa fa-list" aria-hidden="true"></i>
 						<span class="col-xs-0 pull-right"> LIST</span>
 					</button>
@@ -745,7 +745,7 @@
 						<span class="col-xs-0 pull-right"> GRID</span>
 					</button>
 
-					<button type="button" class="btn btn-default bntList" id="btnList2">
+					<button type="button" class="btn btn-default btnList" id="btnList2">
 						<i class="fa fa-list" aria-hidden="true"></i>
 						<span class="col-xs-0 pull-right"> LIST</span>
 					</button>

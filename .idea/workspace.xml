@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ab0a2a0-5775-41a9-8ef2-c27f12351fd1" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/css/productos.css" afterPath="$PROJECT_DIR$/frontend/views/css/productos.css" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/js/template.js" afterPath="$PROJECT_DIR$/frontend/views/js/template.js" />
       <change beforePath="$PROJECT_DIR$/frontend/views/modules/destacados.php" afterPath="$PROJECT_DIR$/frontend/views/modules/destacados.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,38 +30,23 @@
       <file leaf-file-name="destacados.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/views/modules/destacados.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="1014" column="33" lean-forward="false" selection-start-line="1014" selection-start-column="33" selection-end-line="1014" selection-end-column="33" />
+            <state relative-caret-position="227">
+              <caret line="250" column="19" lean-forward="true" selection-start-line="250" selection-start-column="19" selection-end-line="250" selection-end-column="19" />
               <folding>
                 <element signature="n#ul#0;n#div#0;n#div#1;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#ul#1;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#ul#1;n#div#0;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#div#3;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#ul#1;n#div#0;n#div#3;n#!!top" expanded="true" />
-                <element signature="n#ul#1;n#div#0;n#div#3;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#div#5;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#ul#1;n#div#0;n#div#5;n#!!top" expanded="true" />
-                <element signature="n#ul#1;n#div#0;n#div#5;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="productos.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/views/css/productos.css">
+      <file leaf-file-name="template.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/views/js/template.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="191" column="19" lean-forward="false" selection-start-line="191" selection-start-column="19" selection-end-line="191" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+            <state relative-caret-position="268">
+              <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -84,6 +70,8 @@
       <find>imgProducto</find>
       <find>easeOutQuart</find>
       <find>backend</find>
+      <find>btnList</find>
+      <find>grid0</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -102,7 +90,6 @@
         <option value="$PROJECT_DIR$/frontend/models/template.model.php" />
         <option value="$PROJECT_DIR$/frontend/controllers/template.controller.php" />
         <option value="$PROJECT_DIR$/frontend/ajax/template.ajax.php" />
-        <option value="$PROJECT_DIR$/frontend/views/js/template.js" />
         <option value="$PROJECT_DIR$/backend/controllers/products.controller.php" />
         <option value="$PROJECT_DIR$/frontend/views/css/header.css" />
         <option value="$PROJECT_DIR$/.htaccess" />
@@ -121,8 +108,9 @@
         <option value="$PROJECT_DIR$/frontend/views/modules/slide.php" />
         <option value="$PROJECT_DIR$/frontend/views/template.php" />
         <option value="$PROJECT_DIR$/frontend/views/css/productos.css" />
-        <option value="$PROJECT_DIR$/frontend/views/modules/destacados.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/frontend/views/modules/destacados.php" />
+        <option value="$PROJECT_DIR$/frontend/views/js/template.js" />
       </list>
     </option>
   </component>
@@ -202,13 +190,7 @@
               <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="ecommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ajax" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
@@ -221,14 +203,7 @@
               <item name="ecommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
@@ -310,15 +285,16 @@
       <workItem from="1514946928930" duration="129000" />
       <workItem from="1514947261644" duration="80000" />
       <workItem from="1514947372463" duration="6168000" />
-      <workItem from="1515118305645" duration="3261000" />
+      <workItem from="1515118305645" duration="4752000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80249000" />
+    <option name="totallyTimeSpent" value="81740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1614" height="1037" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19005102" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -328,7 +304,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938644" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289183" sideWeight="0.49753696" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289183" sideWeight="0.49753696" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -498,20 +474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/ajax/template.ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/js/template.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -691,21 +653,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/modules/destacados.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="1014" column="33" lean-forward="false" selection-start-line="1014" selection-start-column="33" selection-end-line="1014" selection-end-column="33" />
-          <folding>
-            <element signature="n#ul#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ul#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#ul#1;n#div#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#3;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ul#1;n#div#0;n#div#3;n#!!top" expanded="true" />
-            <element signature="n#ul#1;n#div#0;n#div#3;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#5;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ul#1;n#div#0;n#div#5;n#!!top" expanded="true" />
-            <element signature="n#ul#1;n#div#0;n#div#5;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -717,10 +669,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/frontend/ajax/template.ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+        <state relative-caret-position="108">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/modules/destacados.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="250" column="19" lean-forward="true" selection-start-line="250" selection-start-column="19" selection-end-line="250" selection-end-column="19" />
+          <folding>
+            <element signature="n#ul#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ul#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#ul#1;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ul#1;n#div#0;n#div#5;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/js/template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="28" />
           <folding />
         </state>
       </provider>
