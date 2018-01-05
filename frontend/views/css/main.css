@@ -116,6 +116,15 @@ a:visited, a:link, a:focus, a:hover, a:active {
 	color : #333333;
 }
 
+/*Scroll Up*/
+#scrollUp {
+	bottom     : 20px;
+	right      : 20px;
+	width      : 50px;
+	height     : 50px;
+	background : url("../img/plantilla/flecha.jpg");
+}
+
 /*
 	Escritorio grande - LG - 1366
 */

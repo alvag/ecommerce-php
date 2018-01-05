@@ -11,7 +11,7 @@ $.ajax({
     }
 });
 
-// Cuadricula o lista
+/*Cuadricula o lista*/
 
 var btnList = $(".btnList");
 
@@ -36,3 +36,23 @@ for (var i = 0; i < btnList.length; i++) {
     });
 
 }
+
+/* Efectos con el scroll */
+
+$(window).scroll(function () {
+    var scrollY = window.pageYOffset;
+
+    if (window.matchMedia("(min-width:768px)").matches) {
+        if (scrollY < ($(".banner").offset().top) - 150) {
+            $(".banner img").css({"margin-top": -scrollY / 3 + "px"})
+        } else {
+            scrollY = 0;
+        }
+    }
+});
+
+$.scrollUp({
+    scrollText: "",
+    scrollSpeed: 2000,
+    easingType: "easeOutQuint"
+});

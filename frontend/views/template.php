@@ -76,6 +76,7 @@
 	<script src="<?php echo $url ?>views/js/plugins/jquery.min.js"></script>
 	<script src="<?php echo $url ?>views/js/plugins/bootstrap.min.js"></script>
 	<script src="<?php echo $url ?>views/js/plugins/jquery.easing.js"></script>
+	<script src="<?php echo $url ?>views/js/plugins/jquery.scrollUp.js"></script>
 	<!-- scripts personalizados-->
 	<script src="<?php echo $url ?>views/js/header.js"></script>
 	<script src="<?php echo $url ?>views/js/template.js"></script>
