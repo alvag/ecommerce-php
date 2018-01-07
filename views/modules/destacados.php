@@ -1,6 +1,6 @@
 <figure class="banner">
 
-	<img src="http://localhost/ecommerce/backend/views/img/banner/default.jpg" class="img-responsive" width="100%">
+	<img src="backend/views/img/banner/default.jpg" class="img-responsive" width="100%">
 
 	<div class="textoBanner textoDer">
 		<h1 style="color: #FFF">OFERTAS ESPECIALES</h1>
@@ -73,7 +73,7 @@
 
 				<figure>
 					<a href="#" class="pixelProducto">
-						<img src="http://localhost/ecommerce/backend/views/img/productos/accesorios/accesorio04.jpg"
+						<img src="backend/views/img/productos/accesorios/accesorio04.jpg"
 						     class="img-responsive">
 					</a>
 				</figure>
@@ -117,7 +117,7 @@
 
 				<figure>
 					<a href="#" class="pixelProducto">
-						<img src="http://localhost/ecommerce/backend/views/img/productos/accesorios/accesorio03.jpg"
+						<img src="backend/views/img/productos/accesorios/accesorio03.jpg"
 						     class="img-responsive">
 					</a>
 				</figure>
@@ -161,7 +161,7 @@
 
 				<figure>
 					<a href="#" class="pixelProducto">
-						<img src="http://localhost/ecommerce/backend/views/img/productos/accesorios/accesorio02.jpg"
+						<img src="backend/views/img/productos/accesorios/accesorio02.jpg"
 						     class="img-responsive">
 					</a>
 				</figure>
@@ -205,7 +205,7 @@
 
 				<figure>
 					<a href="#" class="pixelProducto">
-						<img src="http://localhost/ecommerce/backend/views/img/productos/accesorios/accesorio01.jpg"
+						<img src="backend/views/img/productos/accesorios/accesorio01.jpg"
 						     class="img-responsive">
 					</a>
 				</figure>
@@ -255,7 +255,7 @@
 				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
 					<figure>
 						<a href="#" class="pixelProducto">
-							<img src="http://localhost/ecommerce/backend/views/img/productos/accesorios/accesorio04.jpg"
+							<img src="backend/views/img/productos/accesorios/accesorio04.jpg"
 							     class="img-responsive">
 						</a>
 					</figure>
@@ -298,7 +298,7 @@
 				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
 					<figure>
 						<a href="#" class="pixelProducto">
-							<img src="http://localhost/ecommerce/backend/views/img/productos/accesorios/accesorio03.jpg"
+							<img src="backend/views/img/productos/accesorios/accesorio03.jpg"
 							     class="img-responsive">
 						</a>
 					</figure>
@@ -341,7 +341,7 @@
 				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
 					<figure>
 						<a href="#" class="pixelProducto">
-							<img src="http://localhost/ecommerce/backend/views/img/productos/accesorios/accesorio02.jpg"
+							<img src="backend/views/img/productos/accesorios/accesorio02.jpg"
 							     class="img-responsive">
 						</a>
 					</figure>
@@ -384,7 +384,7 @@
 				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
 					<figure>
 						<a href="#" class="pixelProducto">
-							<img src="http://localhost/ecommerce/backend/views/img/productos/accesorios/accesorio01.jpg"
+							<img src="backend/views/img/productos/accesorios/accesorio01.jpg"
 							     class="img-responsive">
 						</a>
 					</figure>
@@ -488,7 +488,7 @@
 
 				<figure>
 					<a href="#" class="pixelProducto">
-						<img src="http://localhost/ecommerce/backend/views/img/productos/ropa/ropa03.jpg"
+						<img src="backend/views/img/productos/ropa/ropa03.jpg"
 						     class="img-responsive">
 					</a>
 				</figure>
@@ -537,7 +537,7 @@
 
 				<figure>
 					<a href="#" class="pixelProducto">
-						<img src="http://localhost/ecommerce/backend/views/img/productos/ropa/ropa04.jpg"
+						<img src="backend/views/img/productos/ropa/ropa04.jpg"
 						     class="img-responsive">
 					</a>
 				</figure>
@@ -585,7 +585,7 @@
 
 				<figure>
 					<a href="#" class="pixelProducto">
-						<img src="http://localhost/ecommerce/backend/views/img/productos/ropa/ropa02.jpg"
+						<img src="backend/views/img/productos/ropa/ropa02.jpg"
 						     class="img-responsive">
 					</a>
 				</figure>
@@ -633,7 +633,7 @@
 
 				<figure>
 					<a href="#" class="pixelProducto">
-						<img src="http://localhost/ecommerce/backend/views/img/productos/ropa/ropa06.jpg"
+						<img src="backend/views/img/productos/ropa/ropa06.jpg"
 						     class="img-responsive">
 					</a>
 				</figure>
@@ -682,7 +682,7 @@
 				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
 					<figure>
 						<a href="#" class="pixelProducto">
-							<img src="http://localhost/ecommerce/backend/views/img/productos/ropa/ropa03.jpg"
+							<img src="backend/views/img/productos/ropa/ropa03.jpg"
 							     class="img-responsive">
 						</a>
 					</figure>
@@ -792,7 +792,7 @@
 
 				<figure>
 					<a href="#" class="pixelProducto">
-						<img src="http://localhost/ecommerce/backend/views/img/productos/cursos/curso05.jpg"
+						<img src="backend/views/img/productos/cursos/curso05.jpg"
 						     class="img-responsive">
 					</a>
 				</figure>
@@ -824,7 +824,7 @@
 						</button>
 
 						<button class="btn btn-default btn-xs agregarCarrito" type="button" idProducto="404"
-						        imagen="http://localhost/ecommerce/backend/views/img/productos/cursos/curso05.jpg"
+						        imagen="backend/views/img/productos/cursos/curso05.jpg"
 						        titulo="Curso de Bootstrap" precio="10" tipo="virtual" peso="0" data-toggle="tooltip"
 						        title="Agregar al carrito de compras">
 							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -847,7 +847,7 @@
 
 				<figure>
 					<a href="#" class="pixelProducto">
-						<img src="http://localhost/ecommerce/backend/views/img/productos/cursos/curso04.jpg"
+						<img src="backend/views/img/productos/cursos/curso04.jpg"
 						     class="img-responsive">
 					</a>
 				</figure>
@@ -879,7 +879,7 @@
 						</button>
 
 						<button class="btn btn-default btn-xs agregarCarrito" type="button" idProducto="404"
-						        imagen="http://localhost/ecommerce/backend/views/img/productos/cursos/curso04.jpg"
+						        imagen="backend/views/img/productos/cursos/curso04.jpg"
 						        titulo="Curso de Canvas y JavaScript" precio="10" tipo="virtual" peso="0"
 						        data-toggle="tooltip"
 						        title="Agregar al carrito de compras">
@@ -903,7 +903,7 @@
 
 				<figure>
 					<a href="#" class="pixelProducto">
-						<img src="http://localhost/ecommerce/backend/views/img/productos/cursos/curso02.jpg"
+						<img src="backend/views/img/productos/cursos/curso02.jpg"
 						     class="img-responsive">
 					</a>
 				</figure>
@@ -935,7 +935,7 @@
 						</button>
 
 						<button class="btn btn-default btn-xs agregarCarrito" type="button" idProducto="404"
-						        imagen="http://localhost/ecommerce/backend/views/img/productos/cursos/curso02.jpg"
+						        imagen="backend/views/img/productos/cursos/curso02.jpg"
 						        titulo="Aprende javascript desde cero" precio="10" tipo="virtual" peso="0"
 						        data-toggle="tooltip"
 						        title="Agregar al carrito de compras">
@@ -959,7 +959,7 @@
 
 				<figure>
 					<a href="#" class="pixelProducto">
-						<img src="http://localhost/ecommerce/backend/views/img/productos/cursos/curso03.jpg"
+						<img src="backend/views/img/productos/cursos/curso03.jpg"
 						     class="img-responsive">
 					</a>
 				</figure>
@@ -991,7 +991,7 @@
 						</button>
 
 						<button class="btn btn-default btn-xs agregarCarrito" type="button" idProducto="404"
-						        imagen="http://localhost/ecommerce/backend/views/img/productos/cursos/curso03.jpg"
+						        imagen="backend/views/img/productos/cursos/curso03.jpg"
 						        titulo="Curso de jQuery" precio="10" tipo="virtual" peso="0" data-toggle="tooltip"
 						        title="Agregar al carrito de compras">
 							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -1019,7 +1019,7 @@
 				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
 					<figure>
 						<a href="#" class="pixelProducto">
-							<img src="http://localhost/ecommerce/backend/views/img/productos/cursos/curso05.jpg"
+							<img src="backend/views/img/productos/cursos/curso05.jpg"
 							     class="img-responsive">
 						</a>
 					</figure>
@@ -1051,7 +1051,7 @@
 							<i class="fa fa-heart" aria-hidden="true"></i>
 						</button>
 						<button class="btn btn-default btn-xs agregarCarrito" type="button" idProducto="404"
-						        imagen="http://localhost/ecommerce/backend/views/img/productos/cursos/curso05.jpg"
+						        imagen="backend/views/img/productos/cursos/curso05.jpg"
 						        titulo="Curso de Bootstrap" precio="10" tipo="virtual" peso="0" data-toggle="tooltip"
 						        title="Agregar al carrito de compras">
 							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
