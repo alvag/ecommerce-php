@@ -5,7 +5,6 @@
 		<ul>
 
 			<?php
-			$urlBackend = Ruta ::getRutaServidor();
 			$slide = SlideController::mostrarSlide();
 			foreach($slide as $key => $value) {
 
@@ -16,9 +15,9 @@
 				$titulo3 = json_decode($value["titulo3"], true);
 
 				echo '<li>
-					<img src="'.$urlBackend.$value["imgFondo"].'" alt="">
+					<img src="backend/'.$value["imgFondo"].'" alt="">
 					<div class="slideOpciones '.$value["tipoSlide"].'">
-						<img style="top: '.$estiloImgProducto["top"].'; right: '.$estiloImgProducto["right"].'; width: '.$estiloImgProducto["width"].'; left: '.$estiloImgProducto["left"].'" src="'.$urlBackend.$value["imgProducto"].'"
+						<img style="top: '.$estiloImgProducto["top"].'; right: '.$estiloImgProducto["right"].'; width: '.$estiloImgProducto["width"].'; left: '.$estiloImgProducto["left"].'" src="backend/'.$value["imgProducto"].'"
 						     alt="" class="imgProducto">
 						<div style="top: '.$estiloTextoSlide["top"].'; left: '.$estiloTextoSlide["left"].'; width: '.$estiloTextoSlide["width"].'; right: '.$estiloTextoSlide["right"].'" class="textosSlide">
 							<h1 style="color: '.$titulo1["color"].'">'.$titulo1["texto"].'</h1>
@@ -41,9 +40,9 @@
 		<ol id="paginacion-slide">
 			<?php
 
-				for($i = 1; $i <= count($slide); $i++) {
-					echo'<li item="'.$i.'"><span class="fa fa-circle"></span></li>';
-				}
+			for($i = 1; $i <= count($slide); $i++) {
+				echo'<li item="'.$i.'"><span class="fa fa-circle"></span></li>';
+			}
 			?>
 		</ol>
 
