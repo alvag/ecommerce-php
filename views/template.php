@@ -36,6 +36,7 @@
 
 	$rutas = array();
 	$ruta = null;
+	$infoProducto = null;
 
 	if(isset($_GET["ruta"])) {
 		$rutas = explode("/", $_GET["ruta"]);
@@ -59,9 +60,18 @@
 			}
 		}
 
-		if($ruta != null) {
+		// validar url de productos
+        $rutaProductos = ProductosController::ctrlMostrarInfoProducto($item, $valor);
+        if ($rutas[0] == $rutaProductos["ruta"]) {
+            $infoProducto = $rutas[0];
+        }
+
+
+		if($ruta != null || $rutas[0] == "articulos-gratis" || $rutas[0] == "lo-mas-vendido" || $rutas[0] == "lo-mas-visto") {
 			include "modules/productos.php";
-		} else {
+		} elseif ($infoProducto != null) {
+            include "modules/infoproducto.php";
+        } else {
 			include "modules/error404.php";
 		}
 
