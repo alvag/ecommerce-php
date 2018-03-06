@@ -16,21 +16,24 @@
     $modulos = array("ARTÍCULOS GRATUITOS", "LO MÁS VENDIDO", "LO MÁS VISTO");
     $rutasModulos = array("articulos-gratis", "lo-mas-vendido", "lo-mas-visto");
 
+    $start = 0;
+    $limit = 4;
+
     if ($modulos[0] == "ARTÍCULOS GRATUITOS") {
         $orderBy = "id";
         $item = "precio";
         $valor = 0;
-        $productosGratis = ProductosController::ctrlMostrarProductos($orderBy, $item, $valor);
+        $productosGratis = ProductosController::ctrlMostrarProductos($orderBy, $start, $limit, $item, $valor);
     }
 
     if ($modulos[1] == "LO MÁS VENDIDO") {
         $orderBy = "ventas";
-        $productosVentas = ProductosController::ctrlMostrarProductos($orderBy);
+        $productosVentas = ProductosController::ctrlMostrarProductos($orderBy, $start, $limit);
     }
 
     if ($modulos[2] == "LO MÁS VISTO") {
         $orderBy = "vistas";
-        $productosVistas = ProductosController::ctrlMostrarProductos($orderBy);
+        $productosVistas = ProductosController::ctrlMostrarProductos($orderBy, $start, $limit);
     }
 
     $arrProductos = array($productosGratis, $productosVentas, $productosVistas);

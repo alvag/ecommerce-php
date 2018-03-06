@@ -17,17 +17,9 @@ class ProductosController {
         return ModeloProductos::modelMostrarInfoProducto($table, $item, $valor);
     }
 
-    /**
-     * Listado de productos para el home
-     *
-     * @param $orderBy
-     * @param null $item
-     * @param null $valor
-     * @return array de documentos
-     */
-    public function ctrlMostrarProductos($orderBy, $item = null, $valor = null) {
+    public static function ctrlMostrarProductos($orderBy, $start, $limit, $item = null, $valor = null) {
         $table = "productos";
-        return ModeloProductos::modelMostrarProductos($table, $orderBy, $item, $valor);
+        return ModeloProductos::modelMostrarProductos($table, $orderBy, $start, $limit, $item, $valor);
 
     }
 
