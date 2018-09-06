@@ -11,8 +11,6 @@ class TemplateController {
 	public static function ctrlEstiloTemplate() {
 		$tabla = "template";
 		$respuesta = TemplateModel::modelEstiloPlantilla($tabla);
-		return $respuesta;
+        return $respuesta;
 	}
-
-
 }
