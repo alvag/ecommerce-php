@@ -4,7 +4,7 @@
 		<div class="row">
 
 			<!--Social-->
-			<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 social">
+			<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 social">
 				<ul>
 					<?php
 					$social = TemplateController ::ctrlEstiloTemplate();
@@ -22,7 +22,7 @@
 			</div>
 
 			<!--Registro-->
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 registro">
+			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3  registro">
 				<ul>
 					<li><a href="#modalLogin" data-toggle="modal">Ingresar</a></li>
 					<li>|</li>
@@ -39,17 +39,17 @@
 		<div class="row" id="header">
 
 			<!-- Logo -->
-			<div class="col-lg-3 col-md-3 col-sm-2 col-xs-12" id="logo">
+			<div class="col-xs-12 col-sm-2 col-md-3 col-lg-3 logo">
 				<a href="./">
 					<img class="img-responsive" src="backend/<?php echo $social['logo'] ?>" alt="">
 				</a>
 			</div>
 
 			<!-- Bloque de Categorías y buscador -->
-			<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+			<div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
 
 				<!-- Boton Categorías -->
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 backColor" id="btnCategorias">
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 backColor" id="btnCategorias">
 					<p>Categorías
 						<span class="pull-right">
 							<i class="fa fa-bars" aria-hidden="true"></i>
@@ -58,7 +58,7 @@
 				</div>
 
 				<!-- Buscador -->
-				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 input-group" id="buscador">
+				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 input-group" id="buscador">
 					<input type="search" name="search" class="form-control" placeholder="Buscar...">
 					<span class="input-group-btn">
 						<a href="#">
@@ -73,7 +73,7 @@
 
 			<!--Shopping cart -->
 
-			<div class="col-lg-3 col-md-3 col-sm-2 col-xs-12" id="shoppingCart">
+			<div class="col-xs-12 col-sm-2 col-md-3 col-lg-3" id="shoppingCart">
 				<a href="#">
 					<button class="btn btn-default pull-left backColor">
 						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -89,18 +89,18 @@
 
 			<?php
 
-			$categorias = ProductosController::ctrlMostrarCategorias();
+			$categorias = ProductosController::getCategories();
 
 			foreach($categorias as $key => $value) {
 
-				echo '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+				echo '<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
 							<h4><a href="'.$value["ruta"].'" class="pixelCategorias">'.$value["categoria"].'</a></h4>
 							<hr>
 							<ul>';
 
 				$item = "id_categoria";
 				$valor = $value["id"];
-				$subcategorias = ProductosController::ctrlMostrarSubCategorias($item, $valor);
+				$subcategorias = ProductosController::getSubCategories($item, $valor);
 
 				foreach($subcategorias as $keySub => $valueSub){
 					echo '<li><a href="'.$valueSub["ruta"].'" class="pixelSubCategorias">'.$valueSub["subcategoria"].'</a></li>';

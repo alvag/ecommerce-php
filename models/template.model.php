@@ -10,7 +10,7 @@ require_once "conexion.php";
 
 class TemplateModel {
 
-	static public function modelEstiloPlantilla($tabla) {
+	static public function modelStyleTemplate($tabla) {
 
 		$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
 		$stmt->execute();

@@ -2,14 +2,14 @@
 
 class ProductosController {
 
-	static public function ctrlMostrarCategorias($item = null, $valor = null) {
+	static public function getCategories($item = null, $valor = null) {
 		$table = "categorias";
-		return ModeloProductos::modelMostrarCategorias($table, $item, $valor);
+		return ModeloProductos::getCategories($table, $item, $valor);
 	}
 
-	static public function ctrlMostrarSubCategorias($item, $valor) {
+	static public function getSubCategories($item, $valor) {
 		$table = "subcategorias";
-		return ModeloProductos::modelMostrarSubCategorias($table, $item, $valor);
+		return ModeloProductos::getSubCategories($table, $item, $valor);
     }
 
     static public function ctrlMostrarInfoProducto($item, $valor) {

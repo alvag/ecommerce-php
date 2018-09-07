@@ -10,7 +10,7 @@ class TemplateController {
 	// trae los estilos de la plantilla
 	public static function ctrlEstiloTemplate() {
 		$tabla = "template";
-		$respuesta = TemplateModel::modelEstiloPlantilla($tabla);
+		$respuesta = TemplateModel::modelStyleTemplate($tabla);
         return $respuesta;
 	}
 }
