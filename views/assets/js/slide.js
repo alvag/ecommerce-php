@@ -15,8 +15,8 @@ var detenerIntervalo = false;
 var toogle = false;
 var cantItems = slide.find("ul li").length;
 
-slide.find("ul li").css({"width": 100 / cantItems + "%"});
-slide.find("ul").css({"width": cantItems * 100 + "%"});
+slide.find("ul li").css({ "width": 100 / cantItems + "%" });
+slide.find("ul").css({ "width": cantItems * 100 + "%" });
 
 setAnimations(item);
 
@@ -31,17 +31,19 @@ flechaAvanzar.click(function () {
 });
 
 function avanzar() {
-    if (item === cantItems -1) {
+    if (item === cantItems - 1) {
         item = 0;
     } else {
         item++;
     }
+
+    interrumpirIntervalo = true;
     moverSlide(item)
 }
 
 flechaRetroceder.click(function () {
     if (item === 0) {
-        item = cantItems -1;
+        item = cantItems - 1;
     } else {
         item--;
     }
@@ -52,7 +54,7 @@ setInterval(function () {
     if (interrumpirIntervalo) {
         interrumpirIntervalo = false;
     } else {
-        if(!detenerIntervalo){
+        if (!detenerIntervalo) {
             avanzar();
         }
     }
@@ -60,9 +62,9 @@ setInterval(function () {
 }, 3000);
 
 function moverSlide(item) {
-    slide.find("ul").animate({"left": item * -100 + "%"}, 1000, "easeOutQuart");
-    itemPaginacion.css({"opacity": 0.5});
-    $(itemPaginacion[item]).css({"opacity": 1});
+    slide.find("ul").animate({ "left": item * -100 + "%" }, 1000, "easeOutQuart");
+    itemPaginacion.css({ "opacity": 0.5 });
+    $(itemPaginacion[item]).css({ "opacity": 1 });
     interrumpirIntervalo = true;
 
     setAnimations(item);
@@ -70,33 +72,33 @@ function moverSlide(item) {
 }
 
 function setAnimations(item) {
-    $(imgProducto[item]).animate({"top": -10 + "%", "opacity": 0}, 100);
-    $(imgProducto[item]).animate({"top": 30 + "px", "opacity": 1}, 600);
+    $(imgProducto[item]).animate({ "top": -10 + "%", "opacity": 0 }, 100);
+    $(imgProducto[item]).animate({ "top": 30 + "px", "opacity": 1 }, 600);
 
-    $(titulos1[item]).animate({"top": -10 + "%", "opacity": 0}, 100);
-    $(titulos1[item]).animate({"top": 30 + "px", "opacity": 1}, 100);
+    $(titulos1[item]).animate({ "top": -10 + "%", "opacity": 0 }, 100);
+    $(titulos1[item]).animate({ "top": 30 + "px", "opacity": 1 }, 100);
 
-    $(titulos2[item]).animate({"top": -10 + "%", "opacity": 0}, 100);
-    $(titulos2[item]).animate({"top": 30 + "px", "opacity": 1}, 100);
+    $(titulos2[item]).animate({ "top": -10 + "%", "opacity": 0 }, 100);
+    $(titulos2[item]).animate({ "top": 30 + "px", "opacity": 1 }, 100);
 
-    $(titulos3[item]).animate({"top": -10 + "%", "opacity": 0}, 100);
-    $(titulos3[item]).animate({"top": 30 + "px", "opacity": 1}, 100);
+    $(titulos3[item]).animate({ "top": -10 + "%", "opacity": 0 }, 100);
+    $(titulos3[item]).animate({ "top": 30 + "px", "opacity": 1 }, 100);
 
-    $(btnVerProducto[item]).animate({"top": -10 + "%", "opacity": 0}, 100);
-    $(btnVerProducto[item]).animate({"top": 30 + "px", "opacity": 1}, 100);
+    $(btnVerProducto[item]).animate({ "top": -10 + "%", "opacity": 0 }, 100);
+    $(btnVerProducto[item]).animate({ "top": 30 + "px", "opacity": 1 }, 100);
 }
 
 // mostrar / ocultar flecas
 
 slide.mouseover(function () {
-    flechaRetroceder.css({"opacity": 1});
-    flechaAvanzar.css({"opacity": 1});
+    flechaRetroceder.css({ "opacity": 1 });
+    flechaAvanzar.css({ "opacity": 1 });
     detenerIntervalo = true;
 });
 
 slide.mouseout(function () {
-    flechaRetroceder.css({"opacity": 0});
-    flechaAvanzar.css({"opacity": 0});
+    flechaRetroceder.css({ "opacity": 0 });
+    flechaAvanzar.css({ "opacity": 0 });
     detenerIntervalo = false;
 });
 

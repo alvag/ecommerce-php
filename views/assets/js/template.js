@@ -1,17 +1,16 @@
 /*herramienta tooltip*/
 $("[data-toggle='tooltip']").tooltip();
 
-
 $.ajax({
     url: "ajax/template.ajax.php",
-    success: function (respuesta) {
-        var colorFondo = JSON.parse(respuesta).colorFondo;
-        var colorTexto = JSON.parse(respuesta).colorTexto;
-        var barraSuperior = JSON.parse(respuesta).barraSuperior;
-        var textoSuperior = JSON.parse(respuesta).textoSuperior;
+    success: function (response) {
+        var colorFondo = JSON.parse(response).colorFondo;
+        var colorTexto = JSON.parse(response).colorTexto;
+        var barraSuperior = JSON.parse(response).barraSuperior;
+        var textoSuperior = JSON.parse(response).textoSuperior;
 
-        $(".backColor, .backColor a").css({"background": colorFondo, "color": colorTexto});
-        $(".barraSuperior, .barraSuperior a").css({"background": barraSuperior, "color": textoSuperior});
+        $(".backColor, .backColor a").css({ "background": colorFondo, "color": colorTexto });
+        $(".barraSuperior, .barraSuperior a").css({ "background": barraSuperior, "color": textoSuperior });
     }
 });
 
@@ -48,7 +47,7 @@ $(window).scroll(function () {
 
     if (window.matchMedia("(min-width:768px)").matches) {
         if (scrollY < ($(".banner").offset().top) - 150) {
-            $(".banner img").css({"margin-top": -scrollY / 3 + "px"})
+            $(".banner img").css({ "margin-top": -scrollY / 3 + "px" })
         } else {
             scrollY = 0;
         }

@@ -11,12 +11,12 @@ require_once "../models/template.model.php";
 
 class AjaxTemplate {
 
-	public function ajaxEstiloTemplate() {
-		$respuesta = TemplateController::ctrlEstiloTemplate();
-		echo json_encode($respuesta);
+	public function ajaxStyleTemplate() {
+		$response = TemplateController::ctrlStyleTemplate();
+		echo json_encode($response);
 	}
 
 }
 
-$objeto = new AjaxTemplate();
-$objeto -> ajaxEstiloTemplate();
+$ajax = new AjaxTemplate();
+$ajax -> ajaxStyleTemplate();

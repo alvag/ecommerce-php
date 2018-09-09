@@ -10,10 +10,11 @@
 		exercitationem explicabo.">
 	<meta name="keyword" content="keyword 1, keyword 2, keyword 3">
 
-	<title>Tienda Virtual</title>
+    <title>Tienda Virtual</title>
+
 	<?php
-	$icono = TemplateController ::ctrlEstiloTemplate();
-	echo '<link rel="icon" href="backend/'.$icono['icono'] . '">';
+	$template = TemplateController ::ctrlStyleTemplate();
+	echo '<link rel="icon" href="./backend/'.$template['icono'] . '">';
 
 	?>
 	<link rel="stylesheet" href="views/assets/css/plugins/bootstrap.min.css">
@@ -45,14 +46,14 @@
 		$valor = $rutas[0];
 
 		// validar url categorias
-		$rutaCategorias = ProductosController ::ctrlMostrarCategorias($item, $valor);
+		$categoria = ProductsController ::getCategories($item, $valor);
 
-		if ($rutas[0] == $rutaCategorias["ruta"]) {
+		if ($rutas[0] == $categoria["ruta"]) {
 			$ruta = $rutas[0];
 		}
 
 		// validar url subcategorias
-		$rutaSubcategorias = ProductosController ::ctrlMostrarSubCategorias($item, $valor);
+		$rutaSubcategorias = ProductsController ::getSubCategories($item, $valor);
 
 		foreach($rutaSubcategorias as $key => $value) {
 			if ($rutas[0] == $value["ruta"]) {
@@ -61,7 +62,7 @@
 		}
 
 		// validar url de productos
-        $rutaProductos = ProductosController::ctrlMostrarInfoProducto($item, $valor);
+        $rutaProductos = ProductsController::ctrlMostrarInfoProducto($item, $valor);
         if ($rutas[0] == $rutaProductos["ruta"]) {
             $infoProducto = $rutas[0];
         }

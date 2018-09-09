@@ -23,17 +23,17 @@
         $orderBy = "id";
         $item = "precio";
         $valor = 0;
-        $productosGratis = ProductosController::ctrlMostrarProductos($orderBy, $start, $limit, $item, $valor);
+        $productosGratis = ProductsController::getProducts($orderBy, $start, $limit, $item, $valor);
     }
 
     if ($modulos[1] == "LO MÁS VENDIDO") {
         $orderBy = "ventas";
-        $productosVentas = ProductosController::ctrlMostrarProductos($orderBy, $start, $limit);
+        $productosVentas = ProductsController::getProducts($orderBy, $start, $limit);
     }
 
     if ($modulos[2] == "LO MÁS VISTO") {
         $orderBy = "vistas";
-        $productosVistas = ProductosController::ctrlMostrarProductos($orderBy, $start, $limit);
+        $productosVistas = ProductsController::getProducts($orderBy, $start, $limit);
     }
 
     $arrProductos = array($productosGratis, $productosVentas, $productosVistas);
@@ -65,19 +65,19 @@
                 </div>
 
             </div>
-            
+
             <div class="container-fluid productos">
                 <div class="container">
                     <div class="row">
                         <!--barra de titulo-->
                         <div class="col-xs-12 tituloDestacado">
-            
+
                             <div class="col-sm-6 col-xs-12">
                                 <h1>
                                     <small>'.$modulos[$i].'</small>
                                 </h1>
                             </div>
-                            
+
                             <div class="col-sm-6 col-xs-12">
                                 <a href="'.$rutasModulos[$i].'">
                                     <button class="btn btn-default backColor pull-right">
@@ -85,25 +85,25 @@
                                     </button>
                                 </a>
                             </div>
-                            
+
                         </div>
                         <div class="clearfix"></div>
                         <hr>
                     </div>
-                    
+
                     <ul class="grid'.$i.'">';
 
                     foreach ($arrProductos[$i] as $key => $value) {
                         echo '
                             <li class="col-md-3 col-sm-6 col-xs-12">
-    
+
                                 <figure>
                                     <a href="'.$value["ruta"].'" class="pixelProducto">
                                         <img src="backend/'.$value["portada"].'"
                                              class="img-responsive">
                                     </a>
                                 </figure>
-                
+
                                 <h4>
                                     <small>
                                         <a href="'.$value["ruta"].'" class="pixelProducto">
@@ -120,7 +120,7 @@
                                     echo'</a>
                                     </small>
                                 </h4>
-                
+
                                 <div class="col-xs-6 precio">';
                                 if ($value["precio"] == 0) {
                                     echo '<h2><small>GRATIS</small></h2>';
@@ -136,10 +136,10 @@
 
                                 }
                                 echo '</div>
-                
+
                                 <div class="col-xs-6 enlaces">
                                     <div class="btn-group pull-right">
-                
+
                                         <button type="button" class="btn btn-default btn-xs deseos" idProducto="'.$value["id"].'"
                                                 data-toggle="tooltip" title="Agregar a mi lista de deseos">
                                             <i class="fa fa-heart" aria-hidden="true"></i>
@@ -167,17 +167,17 @@
                                                 <i class="fa fa-eye" aria-hidden="true"></i>
                                             </button>
                                         </a>
-                
+
                                     </div>
                                 </div>
-                
+
                             </li>
                         ';
                     }
 
        echo '
                     </ul>
-                    
+
                     <ul style="display: none" class="list'.$i.'">';
 
                     foreach ($arrProductos[$i] as $key => $value) {
@@ -191,17 +191,17 @@
                                     </a>
                                 </figure>
                             </div>
-            
+
                             <div class="col-lg-10 col-md-7 col-sm-8 col-xs-12">
                                 <h1>
                                     <small>
                                         <a href="'.$value["ruta"].'" class="pixelProducto">
                                             '.$value["titulo"].'<br>';
-                                            
+
                                             if ($value["nuevo"] != 0) {
                                                 echo '<span class="label label-warning">Nuevo</span> ';
                                             }
-    
+
                                             if ($value["oferta"] != 0) {
                                                 echo '<span class="label label-warning">'.$value["descuentoOferta"].'% off</span>';
                                             }
@@ -247,7 +247,7 @@
                                                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                                             </button>';
                                         }
-            
+
                                     echo '<a href="'.$value["ruta"].'" class="pixelProducto">
                                         <button type="button" class="btn btn-default btn-xs" data-toggle="tooltip"
                                                 title="Ver producto">
@@ -260,8 +260,8 @@
                         </li>';
                        }
                     echo '</ul>
-                    
-                    
+
+
                 </div>
             </div>
         ';

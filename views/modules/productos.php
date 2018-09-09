@@ -86,10 +86,10 @@
                     $item = "ruta";
                     $valor = $rutas[0];
 
-                    $categories = ProductosController::ctrlMostrarCategorias($item, $valor);
+                    $categories = ProductsController::getCategories($item, $valor);
 
                     if (!$categories) {
-                        $subCategories = ProductosController::ctrlMostrarSubCategorias($item, $valor);
+                        $subCategories = ProductsController::getSubCategories($item, $valor);
                         $pItem = "id_subcategoria";
                         $pValor = $subCategories[0]["id"];
 
@@ -103,7 +103,7 @@
 
                 $start = 0;
                 $limit = 12;
-                $products = ProductosController::ctrlMostrarProductos($orderBy, $start, $limit, $pItem, $pValor);
+                $products = ProductsController::getProducts($orderBy, $start, $limit, $pItem, $pValor);
 
                 if (!$products) {
                     echo "
@@ -119,14 +119,14 @@
                     foreach ($products as $key => $value) {
                         echo '
                             <li class="col-md-3 col-sm-6 col-xs-12">
-    
+
                                 <figure>
                                     <a href="'.$value["ruta"].'" class="pixelProducto">
                                         <img src="backend/'.$value["portada"].'"
                                              class="img-responsive">
                                     </a>
                                 </figure>
-                
+
                                 <h4>
                                     <small>
                                         <a href="'.$value["ruta"].'" class="pixelProducto">
@@ -143,7 +143,7 @@
                         echo'</a>
                                     </small>
                                 </h4>
-                
+
                                 <div class="col-xs-6 precio">';
                         if ($value["precio"] == 0) {
                             echo '<h2><small>GRATIS</small></h2>';
@@ -159,10 +159,10 @@
 
                         }
                         echo '</div>
-                
+
                                 <div class="col-xs-6 enlaces">
                                     <div class="btn-group pull-right">
-                
+
                                         <button type="button" class="btn btn-default btn-xs deseos" idProducto="'.$value["id"].'"
                                                 data-toggle="tooltip" title="Agregar a mi lista de deseos">
                                             <i class="fa fa-heart" aria-hidden="true"></i>
@@ -190,17 +190,17 @@
                                                 <i class="fa fa-eye" aria-hidden="true"></i>
                                             </button>
                                         </a>
-                
+
                                     </div>
                                 </div>
-                
+
                             </li>
                         ';
                     }
 
                     echo '
                     </ul>
-                    
+
                     <ul style="display: none" class="list0">';
 
                     foreach ($products as $key => $value) {
@@ -214,7 +214,7 @@
                                     </a>
                                 </figure>
                             </div>
-            
+
                             <div class="col-lg-10 col-md-7 col-sm-8 col-xs-12">
                                 <h1>
                                     <small>

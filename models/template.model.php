@@ -14,8 +14,7 @@ class TemplateModel {
 
 		$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
 		$stmt->execute();
-		return $stmt->fetch();
-
+        return $stmt->fetch();
 	}
 
 }

@@ -8,7 +8,8 @@ body {
 }
 
 ul, ol {
-	padding : 0;
+    padding : 0;
+    list-style      : none;
 }
 
 a:visited, a:link, a:focus, a:hover, a:active {
@@ -113,7 +114,7 @@ a:visited, a:link, a:focus, a:hover, a:active {
 */
 
 .error404 {
-	color : #333333;
+    color : #333333;
 }
 
 /*Scroll Up*/

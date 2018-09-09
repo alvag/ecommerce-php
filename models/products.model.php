@@ -2,9 +2,9 @@
 
     require_once "conexion.php";
 
-    class ModeloProductos
-    {
-        static public function getCategories($table, $item, $valor) {
+    class ProductsModel {
+        static public function getCategories($item, $valor) {
+            $table = "categorias";
             if ($item != null) {
                 $stmt = Conexion::conectar()->prepare("select * from $table where $item = :$item");
                 $stmt->bindParam(":" . $item, $valor, PDO::PARAM_STR);
@@ -17,7 +17,8 @@
             }
         }
 
-        static public function getSubCategories($table, $item, $valor) {
+        static public function getSubCategories($item, $valor) {
+            $table = "subcategorias";
             $stmt = Conexion::conectar()->prepare("select * from $table where $item = :$item");
             $stmt->bindParam(":" . $item, $valor, PDO::PARAM_STR);
             $stmt->execute();
@@ -32,8 +33,8 @@
             return $stmt->fetch();
         }
 
-        static public function modelMostrarProductos($table, $orderBy, $start, $limit, $item, $valor)
-        {
+        static public function getProducts($orderBy, $start, $limit, $item, $valor) {
+            $table = "productos";
             if ($item != null) {
                 $stmt = Conexion::conectar()->prepare("SELECT * FROM $table WHERE $item = :$item ORDER BY $orderBy DESC LIMIT $start, $limit");
                 $stmt->bindParam(":" . $item, $valor, PDO::PARAM_STR);
